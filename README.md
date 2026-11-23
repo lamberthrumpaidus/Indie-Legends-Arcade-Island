@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/brand/indie-legends-logo.webp" alt="Logo Indie Legends Arcade Island" width="190">
+<img src="icon-512.png" alt="Logo Indie Legends Arcade Island" width="190">
 
 # Indie Legends Arcade Island
 
