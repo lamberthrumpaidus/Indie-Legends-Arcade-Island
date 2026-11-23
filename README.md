@@ -6,7 +6,13 @@
 
 **Satu pulau, banyak petualangan.**
 
+**[Mainkan seluruh koleksi game di website resmi](https://indielegendsarcadeisland.netlify.app/)**
+
 </div>
+
+## Website Resmi
+
+Kunjungi **[indielegendsarcadeisland.netlify.app](https://indielegendsarcadeisland.netlify.app/)** untuk menjelajahi dan memainkan koleksi game secara gratis melalui browser.
 
 **Indie Legends Arcade Island** adalah koleksi permainan arcade gratis yang dapat dinikmati langsung melalui browser. Menghadirkan 23 permainan dengan beragam pengalaman, mulai dari aksi, balapan, teka-teki, permainan klasik, hingga petualangan di dunia fantasi.
 
