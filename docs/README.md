@@ -2,7 +2,7 @@
 
 **Create by LamberthRumpaidus.**
 
-Website game indie dengan 23 permainan (22 game arcade/puzzle dan SHINRIN), tanpa iklan. Nama dan logo baru ditempatkan di halaman utama serta favicon. Monogram L/R asli yang diberikan oleh pemilik muncul hanya pada footer (file asli juga disertakan). Selama gameplay, tidak ada logo branding yang mengganggu.
+Website game indie dengan 100 permainan (22 game klasik, SHINRIN, dan 77 game tambahan), tanpa iklan. Nama dan logo baru ditempatkan di halaman utama serta favicon. Monogram L/R asli yang diberikan oleh pemilik muncul hanya pada footer (file asli juga disertakan). Selama gameplay, tidak ada logo branding yang mengganggu.
 
 ## Instalasi Netlify
 
@@ -26,3 +26,7 @@ Unggah ZIP ini ke Netlify Drop, atau ekstrak dan deploy folder yang isinya memil
 ## Batasan
 
 Hasil pengujian simulasi browser tidak menggantikan pengujian HP dan laptop fisik. Ketersediaan offline melalui Netlify bergantung pada keberhasilan cache browser.
+
+## Audio dan permainan tambahan
+
+Efek suara disintesis menggunakan Web Audio API setelah interaksi pemain. Semua game baru ada di enam modul `assets/js/pack-*.js` dan memakai `assets/js/mini-core.js`. Tombol suara tersedia di halaman utama.
