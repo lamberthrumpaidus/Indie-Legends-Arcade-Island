@@ -1,5 +1,40 @@
 [
   {
+    "id": "rubaka",
+    "title": "RUBAKA",
+    "category": "Game Unggulan",
+    "description": "Platformer aksi dengan eksplorasi, pertarungan, kemampuan karakter, item, dan rintangan.",
+    "cover": "featured/rubaka/Screenshot.png",
+    "engine": "featured",
+    "url": "featured/rubaka/index.html"
+  },
+  {
+    "id": "landlord",
+    "title": "LANDLORD",
+    "category": "Game Unggulan",
+    "description": "Petualangan fantasi 3D di tujuh dunia, dengan pertarungan, kemampuan, checkpoint, dan eksplorasi bebas.",
+    "cover": "featured/landlord/docs/preview-desktop-gameplay.png",
+    "engine": "featured",
+    "url": "featured/landlord/index.html"
+  },
+  {
+    "id": "last-asylum",
+    "title": "LAST ASYLUM",
+    "category": "Game Unggulan",
+    "description": "Survival 3D: berburu monster, memasak sup, berdagang, meningkatkan karakter, dan mempertahankan markas.",
+    "cover": "featured/last-asylum/assets/branding/LAST_ASYLUM_logo.png",
+    "engine": "featured",
+    "url": "featured/last-asylum/index.html"
+  },
+  {
+    "id": "spirit-arena",
+    "title": "Spirit Arena",
+    "category": "WebGL",
+    "description": "Bertahan dari gelombang musuh di arena bercahaya dan tingkatkan skor.",
+    "cover": "assets/covers/spirit-arena.svg",
+    "engine": "webgl"
+  },
+  {
     "id": "shinrin",
     "title": "SHINRIN — Spirit Forest",
     "category": "3D Petualangan",

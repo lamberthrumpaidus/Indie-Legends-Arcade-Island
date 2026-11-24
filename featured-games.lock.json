@@ -1,0 +1,570 @@
+{
+  "owner": "lamberthrumpaidus",
+  "games": [
+    {
+      "id": "rubaka",
+      "repo": "Rubaka",
+      "commit": "8c445e366d5ebd0035943a942278ac9a64269e61",
+      "title": "RUBAKA",
+      "description": "Platformer aksi dengan eksplorasi, pertarungan, kemampuan karakter, item, dan rintangan.",
+      "cover": "Screenshot.png",
+      "paths": [
+        "index.html",
+        "app-logo.svg",
+        "brand-lr.svg",
+        "rubaka-experience.css",
+        "rubaka-experience.js",
+        "assets",
+        "Screenshot.png",
+        "LICENSE.txt"
+      ],
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "sha": "7b95525fc48a40f162bddfd9e4e41c33ee181a8e",
+          "bytes": 1070
+        },
+        {
+          "path": "Screenshot.png",
+          "sha": "cfd6ee5499c5e6410d3e8f73e3f1b40efb5e8afb",
+          "bytes": 151807
+        },
+        {
+          "path": "app-logo.svg",
+          "sha": "4b0e5080673e1525a8732f08eba620b17d357661",
+          "bytes": 617
+        },
+        {
+          "path": "assets/lr-credit-logo-v2.png",
+          "sha": "4a1bce491e13dc717563e56feb22dafa6e2b8366",
+          "bytes": 129328
+        },
+        {
+          "path": "assets/rubaka-menu-logo.svg",
+          "sha": "306972cf945b1b8397e6397a4bfd969f2194292b",
+          "bytes": 3616
+        },
+        {
+          "path": "brand-lr.svg",
+          "sha": "5c6c634d27c6ff0cc7b08e80f1bd5d286ca9f049",
+          "bytes": 5831
+        },
+        {
+          "path": "index.html",
+          "sha": "8902c476f785794382f06339a4e1bd60b0917afe",
+          "bytes": 291296
+        },
+        {
+          "path": "rubaka-experience.css",
+          "sha": "4d0f3aea72b539be3b94a0a2c2de149a61c07a11",
+          "bytes": 4984
+        },
+        {
+          "path": "rubaka-experience.js",
+          "sha": "76a5b4c421b196fb3feafa6c242de00b65e8b904",
+          "bytes": 3068
+        }
+      ],
+      "bytes": 591617
+    },
+    {
+      "id": "landlord",
+      "repo": "LANDLORD",
+      "commit": "9598c5848b33400530893c0c3d5a2dd363516932",
+      "title": "LANDLORD",
+      "description": "Petualangan fantasi 3D di tujuh dunia, dengan pertarungan, kemampuan, checkpoint, dan eksplorasi bebas.",
+      "cover": "docs/preview-desktop-gameplay.png",
+      "paths": [
+        "index.html",
+        "assets",
+        "src/css",
+        "src/js",
+        "docs/preview-desktop-gameplay.png"
+      ],
+      "files": [
+        {
+          "path": "assets/branding/landlord-icon.png",
+          "sha": "4c886fadddd5883738a7621d23be2ada977d3108",
+          "bytes": 520502
+        },
+        {
+          "path": "assets/branding/landlord-portal-logo.png",
+          "sha": "088e7e5bdf8471c7ef42e0614e8ccdedc21efabd",
+          "bytes": 1568961
+        },
+        {
+          "path": "assets/creator-banner.png",
+          "sha": "38ee244d84d1c48027cf971aba13817815f04e74",
+          "bytes": 129799
+        },
+        {
+          "path": "assets/logo/lr-original.png",
+          "sha": "c0402f843081764e1407e7f8afeacf206b138693",
+          "bytes": 566828
+        },
+        {
+          "path": "assets/lr-credit-logo-v2.png",
+          "sha": "4a1bce491e13dc717563e56feb22dafa6e2b8366",
+          "bytes": 129328
+        },
+        {
+          "path": "assets/night-sky.webp",
+          "sha": "40b15c2bb32abe5164b1f274762df9ae242223bc",
+          "bytes": 73054
+        },
+        {
+          "path": "assets/scene/night-sky.webp",
+          "sha": "40b15c2bb32abe5164b1f274762df9ae242223bc",
+          "bytes": 73054
+        },
+        {
+          "path": "assets/textures/bamboo_bark_1p5k.png",
+          "sha": "610e6b74ccc4b4d5148cf2a02e05588d3a14a4b1",
+          "bytes": 3891041
+        },
+        {
+          "path": "assets/textures/bamboo_leaves_1p5k.png",
+          "sha": "c9837b95ccbbd59def79c41c424657953120da37",
+          "bytes": 644977
+        },
+        {
+          "path": "assets/textures/ground_moss_1p5k.png",
+          "sha": "a2e1fde6b1ac0bd8366786700beff57bc9fe594f",
+          "bytes": 5333060
+        },
+        {
+          "path": "assets/textures/sakura_petals_1p5k.png",
+          "sha": "29776c65e9f855f9e3421b5a12b18f2ffd409863",
+          "bytes": 438622
+        },
+        {
+          "path": "assets/textures/stone_path_1p5k.png",
+          "sha": "3599372b415a5afbd8736c9e5e3bfc4b74c8a269",
+          "bytes": 2382824
+        },
+        {
+          "path": "assets/textures/water_soft_1p5k.png",
+          "sha": "6aaf3cecc2d5da9c8f8800ee74d913295d56893c",
+          "bytes": 2847620
+        },
+        {
+          "path": "docs/preview-desktop-gameplay.png",
+          "sha": "c36b2005dc5bd7a63f16f07f7aad7db7d32f759b",
+          "bytes": 1075605
+        },
+        {
+          "path": "index.html",
+          "sha": "237a0fcef9b8c18e60aa217834207bbf5eb980b7",
+          "bytes": 9853
+        },
+        {
+          "path": "src/css/base.css",
+          "sha": "6ee94935ff159ffb1396a2b6f4696577a151c69d",
+          "bytes": 49264
+        },
+        {
+          "path": "src/css/brand-menu.css",
+          "sha": "af48488e1f02243c5b4bd88a7c58125b86964753",
+          "bytes": 6395
+        },
+        {
+          "path": "src/css/final.css",
+          "sha": "abec93bc3b16ba784d1b34c0a57f005293c0394b",
+          "bytes": 6353
+        },
+        {
+          "path": "src/css/sonic-hd.css",
+          "sha": "fe38ade1c00a71d8454f1a565fa619abe3c40109",
+          "bytes": 1316
+        },
+        {
+          "path": "src/js/audio/soundscape.js",
+          "sha": "8f3800f19ea18459bd50082240289b7d412c3c3b",
+          "bytes": 9443
+        },
+        {
+          "path": "src/js/runtime/game.js",
+          "sha": "bf2d7b730e81e7d517b78d9011de47451fdbc423",
+          "bytes": 187290
+        },
+        {
+          "path": "src/js/ui/mobile-safe-area.js",
+          "sha": "9b09f163a7afd9749125d2a6426fc7be78b06485",
+          "bytes": 1053
+        },
+        {
+          "path": "src/js/visual/cinematic-fx.js",
+          "sha": "e2377f3cc4812e5b27a33490098b67f243982959",
+          "bytes": 4545
+        }
+      ],
+      "bytes": 19950787
+    },
+    {
+      "id": "last-asylum",
+      "repo": "Last-Asylum",
+      "commit": "c35b2053c52f9fd42af9f6c60c94d2bd706e900c",
+      "title": "LAST ASYLUM",
+      "description": "Survival 3D: berburu monster, memasak sup, berdagang, meningkatkan karakter, dan mempertahankan markas.",
+      "cover": "assets/branding/LAST_ASYLUM_logo.png",
+      "paths": [
+        "index.html",
+        "assets",
+        "js"
+      ],
+      "files": [
+        {
+          "path": "assets/audio/civilian_hit.wav",
+          "sha": "af74082130dd47745b7575c38367cb37e692add8",
+          "bytes": 22094
+        },
+        {
+          "path": "assets/audio/coin.wav",
+          "sha": "625c5293bd59f9538d60a81a62ca721db19488cc",
+          "bytes": 18566
+        },
+        {
+          "path": "assets/audio/cook.wav",
+          "sha": "ce36eac3d85a4de0f461cf36c9195213ddddb4ea",
+          "bytes": 48554
+        },
+        {
+          "path": "assets/audio/customer.wav",
+          "sha": "0e778fe61061649875c377b43dbb7adf01471bb2",
+          "bytes": 21212
+        },
+        {
+          "path": "assets/audio/damage.wav",
+          "sha": "80fe222a5b0429ddfe873d6b40e9c8b898d71cf1",
+          "bytes": 21212
+        },
+        {
+          "path": "assets/audio/dash.wav",
+          "sha": "f2919b550e7de6dfa0a5896d32b665ee93511c99",
+          "bytes": 25180
+        },
+        {
+          "path": "assets/audio/fire.wav",
+          "sha": "8c1a1561ea246315ae4895761ed53abad129e634",
+          "bytes": 352844
+        },
+        {
+          "path": "assets/audio/forest.wav",
+          "sha": "f264b725dddd49548f361649be95506253285929",
+          "bytes": 573344
+        },
+        {
+          "path": "assets/audio/gate_close.wav",
+          "sha": "2d9f776f478e0200a0d6a45d18ea79a2bb9e04a0",
+          "bytes": 36206
+        },
+        {
+          "path": "assets/audio/gate_open.wav",
+          "sha": "6f14e476526cc6a34af713355fec108ac161cc54",
+          "bytes": 56492
+        },
+        {
+          "path": "assets/audio/impact.wav",
+          "sha": "21c69e291e5fc1d5534d11e97a40a71b1d6f28fc",
+          "bytes": 9746
+        },
+        {
+          "path": "assets/audio/meat_pickup.wav",
+          "sha": "82fa2ef5ee34ea77a5905ec2d7b356129e28bf56",
+          "bytes": 14156
+        },
+        {
+          "path": "assets/audio/menu.wav",
+          "sha": "ceb45577d97fdc0e0cd683c008fd5a2aa719996a",
+          "bytes": 14156
+        },
+        {
+          "path": "assets/audio/monster_die.wav",
+          "sha": "c4cedac406fe84de1540d4de72db8c9e0dd97a75",
+          "bytes": 34442
+        },
+        {
+          "path": "assets/audio/music.wav",
+          "sha": "f6f1ef59ac5ea0e9dfa0d56ef9c57c4793de18a8",
+          "bytes": 705644
+        },
+        {
+          "path": "assets/audio/poison.wav",
+          "sha": "edaae876bf9ac75b0bc28ff41ade7d684a0a89ea",
+          "bytes": 79424
+        },
+        {
+          "path": "assets/audio/sale.wav",
+          "sha": "00060553ed704c96df24d988f72fbded00e99bee",
+          "bytes": 34442
+        },
+        {
+          "path": "assets/audio/step.wav",
+          "sha": "12747116e908188509f1ec1a1a33aa1df7f2ebed",
+          "bytes": 8864
+        },
+        {
+          "path": "assets/audio/sword.wav",
+          "sha": "111776d8138615a9eeddd5f2e11611de2164486b",
+          "bytes": 15038
+        },
+        {
+          "path": "assets/audio/upgrade.wav",
+          "sha": "111800787b7ca59bac2fd6dd91bc9632ec638421",
+          "bytes": 47230
+        },
+        {
+          "path": "assets/audio/wave.wav",
+          "sha": "db12a837c0908d40ba3745374c4b45b4dadf5884",
+          "bytes": 61782
+        },
+        {
+          "path": "assets/branding/LAST_ASYLUM_logo.png",
+          "sha": "95bbedd38d79c66070e72bc1be166c326e0e8a25",
+          "bytes": 1046737
+        },
+        {
+          "path": "assets/branding/L_R.png",
+          "sha": "748131a1561e522a00c6b6f1b4e4f4d8935cb089",
+          "bytes": 146755
+        },
+        {
+          "path": "assets/icons/bamboo.svg",
+          "sha": "23841fecfa25bd9084745146b70d6240d8809036",
+          "bytes": 284
+        },
+        {
+          "path": "assets/icons/blade.svg",
+          "sha": "2741d616f9e9f9ef5a61d20012d8095a60c21e9c",
+          "bytes": 274
+        },
+        {
+          "path": "assets/icons/boar.svg",
+          "sha": "761cf34bdb763630ee6776ee49f15146b58b9a6c",
+          "bytes": 322
+        },
+        {
+          "path": "assets/icons/camera.svg",
+          "sha": "affc0b691ae1ed9a98392bc62caf196bce094d50",
+          "bytes": 295
+        },
+        {
+          "path": "assets/icons/campfire.svg",
+          "sha": "a8a1126fff5f6cc72dbf58112fea05f36338c8a8",
+          "bytes": 299
+        },
+        {
+          "path": "assets/icons/clock.svg",
+          "sha": "5600c79a548f20092c4ed10035e10284035a46c9",
+          "bytes": 282
+        },
+        {
+          "path": "assets/icons/coin.svg",
+          "sha": "6f1bcb8da21171fbda05d27be72080d305369d73",
+          "bytes": 312
+        },
+        {
+          "path": "assets/icons/collect.svg",
+          "sha": "64e75226797fca968d7fb1bbc87970e997f0f897",
+          "bytes": 265
+        },
+        {
+          "path": "assets/icons/dash.svg",
+          "sha": "10030cec0952daa36c3c81a27982a41f9e40f3af",
+          "bytes": 270
+        },
+        {
+          "path": "assets/icons/footprint.svg",
+          "sha": "fa1f5e98bf72e125215b3d0705b29fba819c6f96",
+          "bytes": 295
+        },
+        {
+          "path": "assets/icons/forest.svg",
+          "sha": "2a3cc5beb6d78ed88249d909803a9301c7c43499",
+          "bytes": 276
+        },
+        {
+          "path": "assets/icons/gate.svg",
+          "sha": "422f4396cc6e6b27430f68db7148146760485022",
+          "bytes": 282
+        },
+        {
+          "path": "assets/icons/health.svg",
+          "sha": "9e3d07bfd74347e0073b1bfd1d08eb4e2b59c755",
+          "bytes": 288
+        },
+        {
+          "path": "assets/icons/human.svg",
+          "sha": "28637a540c332c3e881ed474ad2b840e485a8a18",
+          "bytes": 309
+        },
+        {
+          "path": "assets/icons/meat.svg",
+          "sha": "2831de424e5c9b8d1fe2b783725324a0d46955f5",
+          "bytes": 313
+        },
+        {
+          "path": "assets/icons/moon.svg",
+          "sha": "85feed0b9c83735c19ac43aa7840024b47b6a43b",
+          "bytes": 299
+        },
+        {
+          "path": "assets/icons/pause.svg",
+          "sha": "27efac8250a1ef4d758f37a3d2ebf80e8368b067",
+          "bytes": 255
+        },
+        {
+          "path": "assets/icons/poison.svg",
+          "sha": "230b01cc3d22ced7e71db713662a4554d18ecdf6",
+          "bytes": 267
+        },
+        {
+          "path": "assets/icons/settings.svg",
+          "sha": "fc1cbd70db3abb2df8ffeec13178928df5a98323",
+          "bytes": 354
+        },
+        {
+          "path": "assets/icons/soup.svg",
+          "sha": "0d19921c7dde39e3f44959e54a0dc0647921b4fb",
+          "bytes": 319
+        },
+        {
+          "path": "assets/icons/star.svg",
+          "sha": "557a3c8e676da129b258343f84a4d5b7bbc2e4a0",
+          "bytes": 282
+        },
+        {
+          "path": "assets/icons/upgrade.svg",
+          "sha": "42d0040557a9506c7a20fde63934d5fd93c07370",
+          "bytes": 269
+        },
+        {
+          "path": "assets/icons/volume.svg",
+          "sha": "a5137a9022ddad67ff1f6f4a333b3512c2b8e954",
+          "bytes": 278
+        },
+        {
+          "path": "assets/icons/wood.svg",
+          "sha": "eff561b6efebea8da35b1d81c7fa0f98703ac60b",
+          "bytes": 276
+        },
+        {
+          "path": "index.html",
+          "sha": "a4fe23a40cff0d94cb9f9fd83c6f8356d059fcfc",
+          "bytes": 20427
+        },
+        {
+          "path": "js/audio/audio.js",
+          "sha": "55e084dfc734316b2664ea90e3e832a2e3fa7709",
+          "bytes": 9958
+        },
+        {
+          "path": "js/core/effects.js",
+          "sha": "34d2e71fac58b0c92cb73f48d37994c04aaa4c40",
+          "bytes": 423
+        },
+        {
+          "path": "js/core/renderer.js",
+          "sha": "c637ee695b115a337e9aead385e57333a8fb16fb",
+          "bytes": 8676
+        },
+        {
+          "path": "js/core/state.js",
+          "sha": "5fc63391b652cfa23df721585815897e62ddedf7",
+          "bytes": 4176
+        },
+        {
+          "path": "js/entities/enemy.js",
+          "sha": "125d88684cc4b5cd0a54c8964b34ddb0bcd41847",
+          "bytes": 736
+        },
+        {
+          "path": "js/entities/human.js",
+          "sha": "63190ddb40c66197f521e98f57d31926fa1b7266",
+          "bytes": 1476
+        },
+        {
+          "path": "js/gameplay/combat.js",
+          "sha": "e46318ccc6b94b97d1dd0be9c50a7b434ef7cb0c",
+          "bytes": 586
+        },
+        {
+          "path": "js/gameplay/economy.js",
+          "sha": "0191d65a42f3832eb85652341650416a315cd958",
+          "bytes": 1066
+        },
+        {
+          "path": "js/gameplay/physics.js",
+          "sha": "4366c107f270fb950c173f1bc4a5a178cc1004a5",
+          "bytes": 1846
+        },
+        {
+          "path": "js/gameplay/reset.js",
+          "sha": "47d0a8068bf05851673a9b8eec17908839d4951d",
+          "bytes": 956
+        },
+        {
+          "path": "js/gameplay/storage.js",
+          "sha": "38a7a953ecf3fa469084977955c62397862ce442",
+          "bytes": 1038
+        },
+        {
+          "path": "js/gameplay/update.js",
+          "sha": "c9d4af1f9850deb73a1329d3820c7487d580e149",
+          "bytes": 5489
+        },
+        {
+          "path": "js/input/controls.js",
+          "sha": "1be1b0aa327fc0681e4c88fa500712bea175b3f0",
+          "bytes": 8285
+        },
+        {
+          "path": "js/main.js",
+          "sha": "ccb617fe5fddf4be1ed986bbaa61aaea83f9f671",
+          "bytes": 1231
+        },
+        {
+          "path": "js/models/enemy.js",
+          "sha": "d95dc9c2bdf1c36b72e5dd1c81e1913002f3ed45",
+          "bytes": 1344
+        },
+        {
+          "path": "js/models/helpers.js",
+          "sha": "3ccc16ac8460d7fb407d9456b79dec3709f78da5",
+          "bytes": 627
+        },
+        {
+          "path": "js/models/human.js",
+          "sha": "aee18fa18762518703537cd8fa69b37c978b5e14",
+          "bytes": 949
+        },
+        {
+          "path": "js/models/player.js",
+          "sha": "aa8cafb395a813658d5e657b41e8f418c21e44d5",
+          "bytes": 2550
+        },
+        {
+          "path": "js/models/props.js",
+          "sha": "e67a2ce5ddb8bd280e5a4fdc3320e2640afd4dde",
+          "bytes": 3898
+        },
+        {
+          "path": "js/scene/draw.js",
+          "sha": "42829aaeffcc901a77dbed1fb7526f195a5e7939",
+          "bytes": 4147
+        },
+        {
+          "path": "js/scene/world.js",
+          "sha": "26b09dbc7493e60d730ce5310991ff6724cb40a1",
+          "bytes": 9065
+        },
+        {
+          "path": "js/ui/menu.js",
+          "sha": "9cca12c344f6fdb00da42e98e4f4c6a4e59285bc",
+          "bytes": 5627
+        }
+      ],
+      "bytes": 3495661
+    }
+  ]
+}

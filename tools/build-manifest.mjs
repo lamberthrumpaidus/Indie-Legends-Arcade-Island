@@ -1,7 +1,9 @@
 import fs from 'node:fs/promises';import path from 'node:path';import crypto from 'node:crypto';
+import {syncFeatured} from './sync-featured.mjs';
+await syncFeatured();
 const root=new URL('../',import.meta.url);const rootPath=decodeURIComponent(root.pathname);const assets=[];const hash=crypto.createHash('sha256');
 async function add(rel){const data=await fs.readFile(path.join(rootPath,rel));assets.push({path:rel,bytes:data.length,sha256:crypto.createHash('sha256').update(data).digest('hex')});hash.update(rel);hash.update(data)}
 async function walk(dir){for(const ent of (await fs.readdir(path.join(rootPath,dir),{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const rel=path.posix.join(dir,ent.name);if(ent.isDirectory())await walk(rel);else if(!rel.endsWith('.map')&&!rel.endsWith('ThreeRenderer.js')&&!rel.endsWith('three-entry.js')&&!rel.endsWith('lamberth-original.png'))await add(rel)}}
-for(const dir of ['assets','src','legacy'])await walk(dir);for(const p of ['index.html','manifest.json'])await add(p);
+for(const dir of ['assets','src','legacy','featured'])await walk(dir);for(const p of ['index.html','manifest.json'])await add(p);
 try{await fs.access(path.join(rootPath,'optional/three-demo.bundle.js'));for(const p of ['optional/three.html','optional/three-demo.bundle.js'])await add(p)}catch{}
 hash.update(await fs.readFile(path.join(rootPath,'sw.js')));const shell=assets.filter(a=>a.path==='index.html'||a.path==='manifest.json'||a.path.startsWith('src/')||a.path.startsWith('assets/brand/')||a.path==='assets/style.css').map(a=>a.path);const release={version:hash.digest('hex').slice(0,16),assets,shell,bytes:assets.reduce((s,a)=>s+a.bytes,0)};await fs.writeFile(path.join(rootPath,'offline-manifest.js'),'self.ILA_RELEASE='+JSON.stringify(release)+';\n');console.log('Release '+release.version+': '+assets.length+' assets, '+release.bytes+' bytes');
