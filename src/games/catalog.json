@@ -1,0 +1,902 @@
+[
+  {
+    "id": "shinrin",
+    "title": "SHINRIN — Spirit Forest",
+    "category": "3D Petualangan",
+    "description": "Petualangan 3D: gerbang torii, air, cahaya, dan tujuh roh.",
+    "cover": "assets/covers/shinrin.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=shinrin"
+  },
+  {
+    "id": "snake",
+    "title": "Snake Neon",
+    "category": "Arcade",
+    "description": "Kumpulkan energi, jangan menabrak tubuh.",
+    "cover": "assets/covers/snake.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=snake"
+  },
+  {
+    "id": "meteor",
+    "title": "Meteor Escape",
+    "category": "Aksi",
+    "description": "Hindari hujan meteor selama mungkin.",
+    "cover": "assets/covers/meteor.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=meteor"
+  },
+  {
+    "id": "space",
+    "title": "Space Defender",
+    "category": "Aksi",
+    "description": "Tembak musuh di galaksi.",
+    "cover": "assets/covers/space.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=space"
+  },
+  {
+    "id": "flappy",
+    "title": "Sky Hopper",
+    "category": "Arcade",
+    "description": "Terbang melewati celah pipa.",
+    "cover": "assets/covers/flappy.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=flappy"
+  },
+  {
+    "id": "breakout",
+    "title": "Block Breaker",
+    "category": "Arcade",
+    "description": "Pecahkan semua balok dengan bola.",
+    "cover": "assets/covers/breakout.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=breakout"
+  },
+  {
+    "id": "pong",
+    "title": "Neon Pong",
+    "category": "Olahraga",
+    "description": "Kalahkan paddle komputer.",
+    "cover": "assets/covers/pong.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=pong"
+  },
+  {
+    "id": "racer",
+    "title": "Lane Racer",
+    "category": "Balap",
+    "description": "Lewati jalan raya tanpa tabrakan.",
+    "cover": "assets/covers/racer.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=racer"
+  },
+  {
+    "id": "catch",
+    "title": "Star Catcher",
+    "category": "Arcade",
+    "description": "Tangkap bintang, hindari bom.",
+    "cover": "assets/covers/catch.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=catch"
+  },
+  {
+    "id": "orbit",
+    "title": "Asteroid Field",
+    "category": "Aksi",
+    "description": "Hancurkan asteroid sebelum menabrak.",
+    "cover": "assets/covers/orbit.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=orbit"
+  },
+  {
+    "id": "runner",
+    "title": "Pixel Runner",
+    "category": "Aksi",
+    "description": "Lompat melewati rintangan.",
+    "cover": "assets/covers/runner.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=runner"
+  },
+  {
+    "id": "aim",
+    "title": "Target Rush",
+    "category": "Aksi",
+    "description": "Bidik sebanyak mungkin dalam 30 detik.",
+    "cover": "assets/covers/aim.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=aim"
+  },
+  {
+    "id": "maze",
+    "title": "Maze Explorer",
+    "category": "Puzzle",
+    "description": "Cari jalan keluar dari labirin.",
+    "cover": "assets/covers/maze.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=maze"
+  },
+  {
+    "id": "2048",
+    "title": "Merge 2048",
+    "category": "Puzzle",
+    "description": "Gabungkan angka sampai 2048.",
+    "cover": "assets/covers/2048.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=2048"
+  },
+  {
+    "id": "tictactoe",
+    "title": "Tic Tac Toe",
+    "category": "Strategi",
+    "description": "Lawan bot yang berusaha menang.",
+    "cover": "assets/covers/tictactoe.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=tictactoe"
+  },
+  {
+    "id": "memory",
+    "title": "Memory Match",
+    "category": "Puzzle",
+    "description": "Temukan 8 pasang kartu yang sama.",
+    "cover": "assets/covers/memory.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=memory"
+  },
+  {
+    "id": "mines",
+    "title": "Minesweeper",
+    "category": "Strategi",
+    "description": "Buka kotak aman, tandai ranjau.",
+    "cover": "assets/covers/mines.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=mines"
+  },
+  {
+    "id": "slide",
+    "title": "Sliding 15",
+    "category": "Puzzle",
+    "description": "Urutkan angka 1 sampai 15.",
+    "cover": "assets/covers/slide.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=slide"
+  },
+  {
+    "id": "math",
+    "title": "Math Sprint",
+    "category": "Edukasi",
+    "description": "Jawab 10 soal matematika secepatnya.",
+    "cover": "assets/covers/math.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=math"
+  },
+  {
+    "id": "simon",
+    "title": "Color Echo",
+    "category": "Memori",
+    "description": "Ulangi urutan warna yang semakin panjang.",
+    "cover": "assets/covers/simon.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=simon"
+  },
+  {
+    "id": "words",
+    "title": "Susun Kata",
+    "category": "Edukasi",
+    "description": "Susun huruf menjadi kata bahasa Indonesia.",
+    "cover": "assets/covers/words.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=words"
+  },
+  {
+    "id": "reaction",
+    "title": "Reaction Test",
+    "category": "Arcade",
+    "description": "Ukur kecepatan reaksimu.",
+    "cover": "assets/covers/reaction.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=reaction"
+  },
+  {
+    "id": "rps",
+    "title": "Suit Arena",
+    "category": "Strategi",
+    "description": "Batu, gunting, kertas lawan komputer.",
+    "cover": "assets/covers/rps.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=rps"
+  },
+  {
+    "id": "riverraft",
+    "title": "River Raft",
+    "category": "Aksi",
+    "description": "Kendalikan rakit di arus sungai, kumpulkan mutiara dan hindari batu.",
+    "cover": "assets/covers/riverraft.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=riverraft"
+  },
+  {
+    "id": "jetpack",
+    "title": "Jetpack Ascent",
+    "category": "Aksi",
+    "description": "Atur dorongan jetpack untuk melewati laser dan mengambil energi.",
+    "cover": "assets/covers/jetpack.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=jetpack"
+  },
+  {
+    "id": "orbitdodge",
+    "title": "Orbital Dodge",
+    "category": "Aksi",
+    "description": "Putar pesawat mengelilingi planet untuk menghindari meteor.",
+    "cover": "assets/covers/orbitdodge.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=orbitdodge"
+  },
+  {
+    "id": "lunarlander",
+    "title": "Lunar Lander",
+    "category": "Simulasi",
+    "description": "Mendaratlah dengan kecepatan rendah di platform bulan.",
+    "cover": "assets/covers/lunarlander.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=lunarlander"
+  },
+  {
+    "id": "cloudglider",
+    "title": "Cloud Glider",
+    "category": "Aksi",
+    "description": "Terbang melewati cincin awan tanpa menyentuh badai.",
+    "cover": "assets/covers/cloudglider.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=cloudglider"
+  },
+  {
+    "id": "hookrescue",
+    "title": "Hook Rescue",
+    "category": "Ketangkasan",
+    "description": "Turunkan kait pada waktu tepat untuk mengambil harta.",
+    "cover": "assets/covers/hookrescue.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=hookrescue"
+  },
+  {
+    "id": "bubbleburst",
+    "title": "Bubble Burst",
+    "category": "Ketangkasan",
+    "description": "Pecahkan gelembung berwarna sebelum menyentuh permukaan; hindari ranjau.",
+    "cover": "assets/covers/bubbleburst.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=bubbleburst"
+  },
+  {
+    "id": "shieldwall",
+    "title": "Shield Wall",
+    "category": "Aksi",
+    "description": "Putar perisai mengelilingi inti untuk menangkis proyektil.",
+    "cover": "assets/covers/shieldwall.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=shieldwall"
+  },
+  {
+    "id": "ninjafruit",
+    "title": "Ninja Slice",
+    "category": "Ketangkasan",
+    "description": "Iris buah dengan menggeser jari; jangan mengenai bom.",
+    "cover": "assets/covers/ninjafruit.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=ninjafruit"
+  },
+  {
+    "id": "dragonbreath",
+    "title": "Dragon Breath",
+    "category": "Aksi",
+    "description": "Arahkan api naga untuk membakar target tanpa mengenai telur.",
+    "cover": "assets/covers/dragonbreath.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=dragonbreath"
+  },
+  {
+    "id": "archeryduel",
+    "title": "Arrow Duel",
+    "category": "Ketangkasan",
+    "description": "Atur tinggi bidikan lalu tembak target bergerak dengan panah.",
+    "cover": "assets/covers/archeryduel.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=archeryduel"
+  },
+  {
+    "id": "paradrop",
+    "title": "Parachute Landing",
+    "category": "Simulasi",
+    "description": "Atur arah parasut dan mendarat tepat di atas target.",
+    "cover": "assets/covers/paradrop.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=paradrop"
+  },
+  {
+    "id": "magnetlab",
+    "title": "Magnet Lab",
+    "category": "Simulasi",
+    "description": "Tarik bola logam ke keranjang dengan mengubah kutub magnet.",
+    "cover": "assets/covers/magnetlab.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=magnetlab"
+  },
+  {
+    "id": "samuraidash",
+    "title": "Samurai Dash",
+    "category": "Aksi",
+    "description": "Geser untuk menghindar, dash melintasi siluet musuh.",
+    "cover": "assets/covers/samuraidash.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=samuraidash"
+  },
+  {
+    "id": "towerguard",
+    "title": "Tower Guard",
+    "category": "Strategi",
+    "description": "Tempatkan menara untuk melindungi benteng dari serangan.",
+    "cover": "assets/covers/towerguard.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=towerguard"
+  },
+  {
+    "id": "lightsout",
+    "title": "Lights Out",
+    "category": "Puzzle",
+    "description": "Padamkan seluruh lampu dengan menukar tetangga silang.",
+    "cover": "assets/covers/lightsout.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=lightsout"
+  },
+  {
+    "id": "nonogram",
+    "title": "Pixel Nonogram",
+    "category": "Puzzle",
+    "description": "Penuhi kotak piksel sesuai angka petunjuk baris dan kolom.",
+    "cover": "assets/covers/nonogram.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=nonogram"
+  },
+  {
+    "id": "sudoku4",
+    "title": "Sudoku Mini",
+    "category": "Puzzle",
+    "description": "Isi angka 1–4 tanpa pengulangan pada baris, kolom, dan kotak.",
+    "cover": "assets/covers/sudoku4.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=sudoku4"
+  },
+  {
+    "id": "numbertrail",
+    "title": "Number Trail",
+    "category": "Puzzle",
+    "description": "Hubungkan titik bernomor secara berurutan dari 1 hingga 12.",
+    "cover": "assets/covers/numbertrail.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=numbertrail"
+  },
+  {
+    "id": "piperotate",
+    "title": "Pipe Connect",
+    "category": "Puzzle",
+    "description": "Putar pipa agar air mengalir dari kiri ke kanan.",
+    "cover": "assets/covers/piperotate.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=piperotate"
+  },
+  {
+    "id": "tangramtap",
+    "title": "Tangram Shapes",
+    "category": "Puzzle",
+    "description": "Cocokkan potongan bentuk berdasarkan warna dan siluet.",
+    "cover": "assets/covers/tangramtap.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=tangramtap"
+  },
+  {
+    "id": "mirrorbeam",
+    "title": "Mirror Beam",
+    "category": "Puzzle",
+    "description": "Putar cermin untuk memantulkan laser menuju kristal.",
+    "cover": "assets/covers/mirrorbeam.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=mirrorbeam"
+  },
+  {
+    "id": "rushcars",
+    "title": "Traffic Escape",
+    "category": "Puzzle",
+    "description": "Geser kendaraan agar mobil merah keluar dari kemacetan.",
+    "cover": "assets/covers/rushcars.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=rushcars"
+  },
+  {
+    "id": "colorflood",
+    "title": "Color Flood",
+    "category": "Puzzle",
+    "description": "Warnai seluruh papan menjadi satu warna dalam 20 langkah.",
+    "cover": "assets/covers/colorflood.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=colorflood"
+  },
+  {
+    "id": "sokobanmicro",
+    "title": "Warehouse Keeper",
+    "category": "Puzzle",
+    "description": "Dorong peti ke titik tujuan tanpa terjebak di dinding.",
+    "cover": "assets/covers/sokobanmicro.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=sokobanmicro"
+  },
+  {
+    "id": "wordhunt",
+    "title": "Word Hunt",
+    "category": "Puzzle",
+    "description": "Temukan kata tersembunyi pada papan huruf.",
+    "cover": "assets/covers/wordhunt.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=wordhunt"
+  },
+  {
+    "id": "codebreaker",
+    "title": "Code Breaker",
+    "category": "Puzzle",
+    "description": "Pecahkan kode empat warna dengan petunjuk posisi.",
+    "cover": "assets/covers/codebreaker.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=codebreaker"
+  },
+  {
+    "id": "wordladder",
+    "title": "Word Ladder",
+    "category": "Puzzle",
+    "description": "Pilih kata yang berbeda satu huruf untuk mencapai tujuan.",
+    "cover": "assets/covers/wordladder.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=wordladder"
+  },
+  {
+    "id": "circuitlink",
+    "title": "Circuit Link",
+    "category": "Puzzle",
+    "description": "Sambungkan titik listrik berurutan tanpa menyentuh penghalang.",
+    "cover": "assets/covers/circuitlink.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=circuitlink"
+  },
+  {
+    "id": "hexmerge",
+    "title": "Hex Merge",
+    "category": "Puzzle",
+    "description": "Gabungkan heksagon bernilai sama hingga mencapai 64.",
+    "cover": "assets/covers/hexmerge.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=hexmerge"
+  },
+  {
+    "id": "darkmaze",
+    "title": "Shadow Maze",
+    "category": "Puzzle",
+    "description": "Temukan jalan keluar di labirin yang hanya terlihat dekat lentera.",
+    "cover": "assets/covers/darkmaze.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=darkmaze"
+  },
+  {
+    "id": "whackmole",
+    "title": "Mole Garden",
+    "category": "Ketangkasan",
+    "description": "Ketuk tikus tanah yang muncul sebelum kembali ke lubangnya.",
+    "cover": "assets/covers/whackmole.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=whackmole"
+  },
+  {
+    "id": "beatlane",
+    "title": "Beat Lane",
+    "category": "Musik",
+    "description": "Tekan empat lajur tepat ketika not mencapai garis ritme.",
+    "cover": "assets/covers/beatlane.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=beatlane"
+  },
+  {
+    "id": "ballbalance",
+    "title": "Ball Balance",
+    "category": "Ketangkasan",
+    "description": "Seimbangkan bola di atas papan yang bisa dimiringkan.",
+    "cover": "assets/covers/ballbalance.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=ballbalance"
+  },
+  {
+    "id": "perfectstack",
+    "title": "Perfect Stack",
+    "category": "Ketangkasan",
+    "description": "Tumpuk balok bergerak dengan ketepatan agar menara tidak runtuh.",
+    "cover": "assets/covers/perfectstack.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=perfectstack"
+  },
+  {
+    "id": "knifewheel",
+    "title": "Knife Wheel",
+    "category": "Ketangkasan",
+    "description": "Lempar pisau ke roda berputar tanpa menyentuh pisau lainnya.",
+    "cover": "assets/covers/knifewheel.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=knifewheel"
+  },
+  {
+    "id": "climbpeak",
+    "title": "Peak Climber",
+    "category": "Ketangkasan",
+    "description": "Lompat ke pijakan berikutnya sambil menghindari batu yang rapuh.",
+    "cover": "assets/covers/climbpeak.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=climbpeak"
+  },
+  {
+    "id": "fishingline",
+    "title": "Fishing Moment",
+    "category": "Ketangkasan",
+    "description": "Lepas kail saat ikan mendekat dan tarik sebelum terlepas.",
+    "cover": "assets/covers/fishingline.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=fishingline"
+  },
+  {
+    "id": "hoopshot",
+    "title": "Hoop Shot",
+    "category": "Olahraga",
+    "description": "Bidik sudut dan tenaga tembakan basket menuju ring.",
+    "cover": "assets/covers/hoopshot.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=hoopshot"
+  },
+  {
+    "id": "puttgolf",
+    "title": "Mini Putt",
+    "category": "Olahraga",
+    "description": "Dorong bola golf dengan sudut dan kekuatan yang tepat menuju lubang.",
+    "cover": "assets/covers/puttgolf.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=puttgolf"
+  },
+  {
+    "id": "dartprecision",
+    "title": "Dart Precision",
+    "category": "Ketangkasan",
+    "description": "Sentuh papan dart yang bergerak untuk memperoleh angka tinggi.",
+    "cover": "assets/covers/dartprecision.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=dartprecision"
+  },
+  {
+    "id": "juggleballs",
+    "title": "Juggle Three",
+    "category": "Ketangkasan",
+    "description": "Jaga tiga bola tetap melayang dengan memantulkannya sebelum jatuh.",
+    "cover": "assets/covers/juggleballs.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=juggleballs"
+  },
+  {
+    "id": "colorswitch",
+    "title": "Color Portal",
+    "category": "Ketangkasan",
+    "description": "Lewati gerbang hanya jika warna karakter cocok dengan gerbang.",
+    "cover": "assets/covers/colorswitch.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=colorswitch"
+  },
+  {
+    "id": "lockpick",
+    "title": "Lock Picker",
+    "category": "Ketangkasan",
+    "description": "Berhentikan jarum tepat pada celah kunci sebanyak enam kali.",
+    "cover": "assets/covers/lockpick.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=lockpick"
+  },
+  {
+    "id": "cupshuffle",
+    "title": "Shell Shuffle",
+    "category": "Ketangkasan",
+    "description": "Ikuti gelas yang menyembunyikan mutiara saat posisi diacak.",
+    "cover": "assets/covers/cupshuffle.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=cupshuffle"
+  },
+  {
+    "id": "spinningtop",
+    "title": "Spinning Top",
+    "category": "Ketangkasan",
+    "description": "Jaga gasing berputar dengan ketukan berirama.",
+    "cover": "assets/covers/spinningtop.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=spinningtop"
+  },
+  {
+    "id": "connectfour",
+    "title": "Connect Four",
+    "category": "Strategi",
+    "description": "Susun empat keping secara horizontal, vertikal, atau diagonal.",
+    "cover": "assets/covers/connectfour.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=connectfour"
+  },
+  {
+    "id": "reversiarena",
+    "title": "Reversi Arena",
+    "category": "Strategi",
+    "description": "Balik keping lawan dengan mengepungnya dari dua arah.",
+    "cover": "assets/covers/reversiarena.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=reversiarena"
+  },
+  {
+    "id": "knighttour",
+    "title": "Knight Tour",
+    "category": "Strategi",
+    "description": "Jelajahi semua petak dengan gerakan L khas kuda catur.",
+    "cover": "assets/covers/knighttour.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=knighttour"
+  },
+  {
+    "id": "battleship",
+    "title": "Sea Battle",
+    "category": "Strategi",
+    "description": "Cari kapal tersembunyi dengan 20 tembakan radar.",
+    "cover": "assets/covers/battleship.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=battleship"
+  },
+  {
+    "id": "hanoitowers",
+    "title": "Tower of Hanoi",
+    "category": "Strategi",
+    "description": "Pindahkan seluruh cakram ke menara paling kanan tanpa melanggar ukuran.",
+    "cover": "assets/covers/hanoitowers.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=hanoitowers"
+  },
+  {
+    "id": "nimstones",
+    "title": "Nim Stones",
+    "category": "Strategi",
+    "description": "Ambil 1–3 batu; pemain yang mengambil batu terakhir menang.",
+    "cover": "assets/covers/nimstones.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=nimstones"
+  },
+  {
+    "id": "lifegarden",
+    "title": "Life Garden",
+    "category": "Simulasi",
+    "description": "Bentuk pola kehidupan sel, lalu jalankan generasi otomatis.",
+    "cover": "assets/covers/lifegarden.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=lifegarden"
+  },
+  {
+    "id": "pocketfarm",
+    "title": "Pocket Farm",
+    "category": "Simulasi",
+    "description": "Tanam, siram, dan panen tanaman sebelum waktunya habis.",
+    "cover": "assets/covers/pocketfarm.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=pocketfarm"
+  },
+  {
+    "id": "checkerssix",
+    "title": "Checkers Mini",
+    "category": "Strategi",
+    "description": "Lompati bidak lawan pada papan dam enam kali enam.",
+    "cover": "assets/covers/checkerssix.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=checkerssix"
+  },
+  {
+    "id": "fourqueens",
+    "title": "Four Queens",
+    "category": "Strategi",
+    "description": "Letakkan empat ratu catur agar tidak saling menyerang.",
+    "cover": "assets/covers/fourqueens.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=fourqueens"
+  },
+  {
+    "id": "hexterritory",
+    "title": "Hex Territory",
+    "category": "Strategi",
+    "description": "Kuasai wilayah dengan menghubungkan dua sisi papan heksagon.",
+    "cover": "assets/covers/hexterritory.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=hexterritory"
+  },
+  {
+    "id": "caravantrade",
+    "title": "Caravan Trader",
+    "category": "Strategi",
+    "description": "Beli dan jual barang untuk meraih keuntungan dalam 8 hari.",
+    "cover": "assets/covers/caravantrade.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=caravantrade"
+  },
+  {
+    "id": "primehunter",
+    "title": "Prime Hunter",
+    "category": "Edukasi",
+    "description": "Temukan semua bilangan prima pada papan sebelum waktu habis.",
+    "cover": "assets/covers/primehunter.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=primehunter"
+  },
+  {
+    "id": "sumforge",
+    "title": "Sum Forge",
+    "category": "Edukasi",
+    "description": "Pilih tiga angka untuk menghasilkan nilai target.",
+    "cover": "assets/covers/sumforge.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=sumforge"
+  },
+  {
+    "id": "patternmatrix",
+    "title": "Pattern Matrix",
+    "category": "Edukasi",
+    "description": "Temukan bentuk hilang dalam susunan pola.",
+    "cover": "assets/covers/patternmatrix.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=patternmatrix"
+  },
+  {
+    "id": "binarygate",
+    "title": "Binary Gate",
+    "category": "Edukasi",
+    "description": "Nyalakan bit agar nilainya sama dengan angka target.",
+    "cover": "assets/covers/binarygate.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=binarygate"
+  },
+  {
+    "id": "cipherwheel",
+    "title": "Cipher Wheel",
+    "category": "Edukasi",
+    "description": "Putar roda Caesar sampai tulisan sandi terbaca benar.",
+    "cover": "assets/covers/cipherwheel.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=cipherwheel"
+  },
+  {
+    "id": "deductiondoors",
+    "title": "Three Doors",
+    "category": "Strategi",
+    "description": "Gunakan petunjuk untuk menemukan pintu dengan hadiah.",
+    "cover": "assets/covers/deductiondoors.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=deductiondoors"
+  },
+  {
+    "id": "coordinatehunt",
+    "title": "Coordinate Hunt",
+    "category": "Edukasi",
+    "description": "Cari koordinat X,Y yang diminta dengan mengetuk kotak grid.",
+    "cover": "assets/covers/coordinatehunt.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=coordinatehunt"
+  },
+  {
+    "id": "fractionpairs",
+    "title": "Fraction Pairs",
+    "category": "Edukasi",
+    "description": "Cocokkan pecahan dengan nilai desimal yang setara.",
+    "cover": "assets/covers/fractionpairs.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=fractionpairs"
+  },
+  {
+    "id": "numbermaze",
+    "title": "Number Maze",
+    "category": "Edukasi",
+    "description": "Pindah dari 1 ke 16 dengan loncatan angka berurutan.",
+    "cover": "assets/covers/numbermaze.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=numbermaze"
+  },
+  {
+    "id": "shapecompass",
+    "title": "Shape Compass",
+    "category": "Edukasi",
+    "description": "Pilih bentuk yang sama setelah diputar menuju arah panah.",
+    "cover": "assets/covers/shapecompass.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=shapecompass"
+  },
+  {
+    "id": "sorttrain",
+    "title": "Sort Train",
+    "category": "Edukasi",
+    "description": "Susun gerbong bernomor dari terkecil hingga terbesar.",
+    "cover": "assets/covers/sorttrain.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=sorttrain"
+  },
+  {
+    "id": "pixelstudio",
+    "title": "Pixel Studio",
+    "category": "Santai",
+    "description": "Warnai lukisan piksel 8×8 mengikuti angka pada setiap petak.",
+    "cover": "assets/covers/pixelstudio.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=pixelstudio"
+  },
+  {
+    "id": "bloomgarden",
+    "title": "Bloom Garden",
+    "category": "Santai",
+    "description": "Rawat lima bunga dengan mengetuk saat mereka membutuhkan air.",
+    "cover": "assets/covers/bloomgarden.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=bloomgarden"
+  },
+  {
+    "id": "fireflynight",
+    "title": "Firefly Night",
+    "category": "Santai",
+    "description": "Gerakkan lentera untuk mengumpulkan kunang-kunang malam.",
+    "cover": "assets/covers/fireflynight.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=fireflynight"
+  },
+  {
+    "id": "aquariumcare",
+    "title": "Aquarium Care",
+    "category": "Santai",
+    "description": "Beri makan ikan dan jaga kesehatan akuarium sampai penuh.",
+    "cover": "assets/covers/aquariumcare.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=aquariumcare"
+  },
+  {
+    "id": "sandsculpt",
+    "title": "Sand Sculpt",
+    "category": "Santai",
+    "description": "Bentuk lukisan pasir tiga warna sesuai pola garis pantai.",
+    "cover": "assets/covers/sandsculpt.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=sandsculpt"
+  },
+  {
+    "id": "cloudbuilder",
+    "title": "Cloud Builder",
+    "category": "Santai",
+    "description": "Susun bentuk awan dari tiga gumpalan agar cocok dengan siluet.",
+    "cover": "assets/covers/cloudbuilder.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=cloudbuilder"
+  },
+  {
+    "id": "planetworkshop",
+    "title": "Planet Workshop",
+    "category": "Santai",
+    "description": "Bangun sistem planet dengan mengumpulkan sumber daya di orbit.",
+    "cover": "assets/covers/planetworkshop.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=planetworkshop"
+  },
+  {
+    "id": "melodyecho",
+    "title": "Melody Echo",
+    "category": "Musik",
+    "description": "Ulangi melodi orisinal pendek dari tuts yang menyala.",
+    "cover": "assets/covers/melodyecho.svg",
+    "engine": "legacy",
+    "url": "legacy/index.html?game=melodyecho"
+  }
+]

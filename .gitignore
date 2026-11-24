@@ -1,0 +1,4 @@
+node_modules/
+dist/
+optional/three-demo.bundle.js
+offline-manifest.js

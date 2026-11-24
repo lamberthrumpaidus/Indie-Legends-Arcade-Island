@@ -1,0 +1,17 @@
+{
+  "name": "indie-legends-arcade-island-premium",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-dist.mjs",
+    "build:three": "esbuild optional/three-entry.js --bundle --format=esm --minify --outfile=optional/three-demo.bundle.js && node tools/build-dist.mjs",
+    "test": "node tools/build-manifest.mjs && node --test tools/*.test.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}

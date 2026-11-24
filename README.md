@@ -18,7 +18,7 @@ Kunjungi **[indielegendsarcadeisland.netlify.app](https://indielegendsarcadeisla
 
 Di antara permainan yang tersedia, **SHINRIN — Spirit Forest** mengajak pemain menjelajahi hutan bernuansa Jepang, melewati gerbang dan jembatan, serta mengumpulkan roh dalam sebuah petualangan tiga dimensi. Permainan lainnya menawarkan tantangan singkat dan menyenangkan, seperti **Snake**, **Space Defender**, **2048**, dan berbagai permainan arcade lainnya.
 
-Dirancang untuk dimainkan melalui **ponsel maupun laptop**, Indie Legends Arcade Island menghadirkan pengalaman bermain yang responsif, bebas iklan, dengan animasi dan efek suara yang menyertai permainan. Setiap permainan memiliki karakter, suasana, dan tantangannya sendiri.
+Dirancang untuk dimainkan melalui **ponsel maupun laptop**, Indie Legends Arcade Island menghadirkan portal permainan dengan tema pulau terapung, katalog interaktif, dukungan offline, serta pengalaman audio dan visual yang beragam. Spirit Arena tersedia sebagai permainan tambahan dengan sistem rendering WebGL dan mode kompatibilitas.
 
 ---
 

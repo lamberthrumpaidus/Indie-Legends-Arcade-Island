@@ -1,0 +1,3 @@
+import './build-manifest.mjs';
+import fs from 'node:fs/promises';import path from 'node:path';
+const root=new URL('../',import.meta.url);const read=await fs.readFile(new URL('offline-manifest.js',root),'utf8');const manifest=JSON.parse(read.replace('self.ILA_RELEASE=','').trim().replace(/;$/,''));const dist=new URL('dist/',root);await fs.rm(dist,{recursive:true,force:true});await fs.mkdir(dist,{recursive:true});for(const name of [...manifest.assets.map(a=>a.path),'sw.js','offline-manifest.js']){let dest=new URL(name,dist);await fs.mkdir(path.dirname(dest.pathname),{recursive:true});await fs.copyFile(new URL(name,root),dest)}console.log('Static production files created in dist/.');
