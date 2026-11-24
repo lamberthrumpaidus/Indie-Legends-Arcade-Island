@@ -65,6 +65,7 @@
 <div id="winScreen" class="screen"><div class="screenCard"><div class="eyebrow" style="justify-content:center">KUIL TELAH TERBANGUN</div><h2>Perjalanan Selesai</h2><p id="winMessage">Semua roh berhasil kamu kumpulkan.</p><div class="menuActions"><button id="playAgainBtn" class="start">MAIN LAGI</button><button id="menuBtn" class="plain">MENU UTAMA</button></div></div></div>
 <div id="settingsScreen" class="screen hidden" style="z-index:13;background:#061615ed"><div class="screenCard"><div class="eyebrow" style="justify-content:center">PREFERENSI</div><h2>Pengaturan</h2><div class="settingline"><span>Kualitas grafis</span><select id="qualitySelect"><option value="high">Tinggi</option><option value="medium">Sedang</option><option value="low">Ringan</option></select></div><div class="settingline"><span>Efek suara</span><select id="audioSelect"><option value="on">Aktif</option><option value="off">Nonaktif</option></select></div><button id="settingsBack" class="start">KEMBALI</button></div></div>
 <div id="noGL"><div><h2>Perangkat belum mendukung tampilan ini</h2><p>Coba gunakan Chrome atau Edge terbaru, lalu aktifkan akselerasi grafis.</p></div></div>
+<script src="../assets/js/audio.js"></script>
 <script>
 'use strict';
 const $=id=>document.getElementById(id);
@@ -295,35 +296,42 @@ if(points){gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE);gl.depthMask(fa
 let phase='menu',paused=false,startTime=0,elapsed=0,raf=0,clock=0,prev=0,player=null;
 let cameraYaw=0,camX=0,camY=0,camZ=0,camTarget=[0,0,0],lookPitch=.15;
 let keyState=new Set(),mobileVector={x:0,y:0},pointer={active:false,id:null,x:0,y:0},joy={id:null,x:0,y:0},isTouch=matchMedia('(pointer:coarse)').matches;
-let collected=0,toastTimer=0,lastFPS=0,frameCount=0,fpsVal=0,audioOn=true,audioCtx=null,dashReady=0,winning=false;
+let collected=0,toastTimer=0,lastFPS=0,frameCount=0,fpsVal=0,audioOn=window.ILAudio?.enabled!==false,audioCtx=null,dashReady=0,winning=false;
 const sparkle=m=>{$('toastText').textContent=m;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2300);};
-function sound(freq=660){if(!audioOn)return;try{audioCtx??=new (window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();let t=audioCtx.currentTime,o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.setValueAtTime(freq,t);o.frequency.exponentialRampToValueAtTime(freq*1.55,t+.18);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.045,t+.025);g.gain.exponentialRampToValueAtTime(.0001,t+.49);o.connect(g);g.connect(audioCtx.destination);o.start(t);o.stop(t+.51);}catch(e){} }
+let footDistance=0,ambientClock=0;
+function sound(event='tap',options={}){window.ILAudio?.play(event,'shinrin',options)}
+window.ILAudio?.select('shinrin');
+document.getElementById('audioSelect').value=audioOn?'on':'off';
+window.addEventListener('storage',e=>{if(e.key==='ila_sound'){audioOn=e.newValue!=='off';document.getElementById('audioSelect').value=audioOn?'on':'off'}});
+window.addEventListener('message',e=>{if(e.origin===location.origin&&e.data?.type==='ila-audio-setting'){audioOn=!!e.data.enabled;document.getElementById('audioSelect').value=audioOn?'on':'off'}});
 function countUI(){const text=String(Math.floor(elapsed/60)).padStart(2,'0')+':'+String(Math.floor(elapsed%60)).padStart(2,'0');$('timeStat').textContent=text;$('orbStat').textContent=collected+' / 7';$('progressFill').style.width=(100*collected/7)+'%';$('questText').textContent=collected===7?'Pergi ke kuil di ujung hutan.':'Temukan '+(7-collected)+' cahaya roh lagi.';}
-function resetGame(){keyState.clear();mobileVector={x:0,y:0};joy.x=joy.y=0;$('joyKnob').style.transform='translate(0,0)';collected=0;winning=false;elapsed=0;dashReady=0;for(let s of spirits)s.got=false;
+function resetGame(){keyState.clear();mobileVector={x:0,y:0};joy.x=joy.y=0;$('joyKnob').style.transform='translate(0,0)';collected=0;winning=false;elapsed=0;dashReady=0;footDistance=0;ambientClock=0;for(let s of spirits)s.got=false;
 player={x:pathX(17),y:0,z:17,angle:PI,jumpY:0,vY:0,stride:0,dirX:0,dirZ:-1,dashTime:0};cameraYaw=0;camX=player.x+7;camY=6.5;camZ=player.z+10;lookPitch=.15;countUI();}
-function startGame(){resetGame();phase='play';paused=false;$('startScreen').classList.add('hidden');$('pauseScreen').classList.remove('on');$('winScreen').classList.remove('on');$('hud').classList.add('on');$('mobile').classList.toggle('on',isTouch);sparkle('Jelajahi hutan dan temukan tujuh roh');sound(470);}
+function startGame(){resetGame();phase='play';paused=false;$('startScreen').classList.add('hidden');$('pauseScreen').classList.remove('on');$('winScreen').classList.remove('on');$('hud').classList.add('on');$('mobile').classList.toggle('on',isTouch);sparkle('Jelajahi hutan dan temukan tujuh roh');window.ILAudio?.unlock();sound('start');}
 function openPause(){if(phase!=='play')return;paused=true;phase='pause';$('pauseScreen').classList.add('on');}
-function resume(){if(phase!=='pause')return;paused=false;phase='play';$('pauseScreen').classList.remove('on');prev=performance.now();}
+function resume(){if(phase!=='pause')return;window.ILAudio?.unlock();paused=false;phase='play';$('pauseScreen').classList.remove('on');prev=performance.now();}
 function goMenu(){phase='menu';paused=false;$('startScreen').classList.remove('hidden');$('pauseScreen').classList.remove('on');$('winScreen').classList.remove('on');$('hud').classList.remove('on');$('mobile').classList.remove('on');}
-function winGame(){phase='won';winning=true;$('winScreen').classList.add('on');$('winMessage').textContent='Kamu berhasil membangunkan kuil dan mengumpulkan semua 7 roh dalam '+$('timeStat').textContent+'. Hutan kini kembali bercahaya.';sound(900);setTimeout(()=>sound(1100),180);}
+function winGame(){phase='won';winning=true;$('winScreen').classList.add('on');$('winMessage').textContent='Kamu berhasil membangunkan kuil dan mengumpulkan semua 7 roh dalam '+$('timeStat').textContent+'. Hutan kini kembali bercahaya.';sound('win');}
 function collide(x,z){if(x>65||x< -65||z>29||z< -91)return true;
 let river=Math.abs(z+35)<5.3;if(river&&Math.abs(x-pathX(z))>4.2)return true;
 // shrine exterior acts as a solid barrier, approach from the front
 if(z< -84.5&&Math.abs(x-pathX(-92))<9)return true;
 for(let [tx,tz,r] of obstacles){if(Math.abs(tx-x)>1.25||Math.abs(tz-z)>1.25)continue;let rr=r+.25;if((tx-x)**2+(tz-z)**2<rr*rr)return true;}return false;}
-function dash(){if(phase!=='play'||dashReady>0)return;player.dashTime=.20;dashReady=1.35;let mov=movement();let mag=Math.hypot(mov.x,mov.z);if(mag>.01){player.dirX=mov.x/mag;player.dirZ=mov.z/mag;}sound(250);}
-function jump(){if(phase!=='play'||player.jumpY>.01||Math.abs(player.vY)>.01)return;player.vY=6.3;sound(380);}
+function dash(){if(phase!=='play'||dashReady>0)return;player.dashTime=.20;dashReady=1.35;let mov=movement();let mag=Math.hypot(mov.x,mov.z);if(mag>.01){player.dirX=mov.x/mag;player.dirZ=mov.z/mag;}sound('dash');}
+function jump(){if(phase!=='play'||player.jumpY>.01||Math.abs(player.vY)>.01)return;player.vY=6.3;sound('jump');}
 function movement(){let ax=0,az=0;if(keyState.has('KeyW')||keyState.has('ArrowUp'))az+=1;if(keyState.has('KeyS')||keyState.has('ArrowDown'))az-=1;if(keyState.has('KeyD')||keyState.has('ArrowRight'))ax+=1;if(keyState.has('KeyA')||keyState.has('ArrowLeft'))ax-=1;
 ax+=mobileVector.x;az-=mobileVector.y;let l=Math.hypot(ax,az);if(l>1){ax/=l;az/=l;}return {x:sin(cameraYaw)*az+cos(cameraYaw)*ax,z:-cos(cameraYaw)*az+sin(cameraYaw)*ax};}
 function update(dt){if(phase!=='play')return;elapsed+=dt;countUI();dashReady=Math.max(0,dashReady-dt);let vel=movement(),speed=Math.hypot(vel.x,vel.z);
 if(speed>.05){player.dirX=vel.x/speed;player.dirZ=vel.z/speed;let desiredAngle=Math.atan2(player.dirX,player.dirZ),delta=Math.atan2(sin(desiredAngle-player.angle),cos(desiredAngle-player.angle));player.angle+=delta*Math.min(1,dt*13);}
 if(player.dashTime>0){player.dashTime-=dt;speed=1;vel={x:player.dirX,z:player.dirZ};}
 let sp=(player.dashTime>0?23:5.6)*dt;
-if(speed>.05){let nextX=player.x+vel.x*sp,nextZ=player.z+vel.z*sp;if(!collide(nextX,player.z))player.x=nextX;if(!collide(player.x,nextZ))player.z=nextZ;}
+if(speed>.05){let ox=player.x,oz=player.z,nextX=player.x+vel.x*sp,nextZ=player.z+vel.z*sp;if(!collide(nextX,player.z))player.x=nextX;if(!collide(player.x,nextZ))player.z=nextZ;
+ if(player.jumpY<=.01&&player.dashTime<=0){footDistance+=Math.hypot(player.x-ox,player.z-oz);if(footDistance>=1.65){sound('step');footDistance=0}}}
+ ambientClock+=dt;if(ambientClock>=2.8){ambientClock=0;if(Math.abs(player.z+35)<11)window.ILAudio?.play('ambient','riverraft');else sound('ambient')}
 player.stride=lerp(player.stride,speed>.1?1:0,Math.min(1,dt*9));
-if(player.vY||player.jumpY){player.vY-=15.7*dt;player.jumpY+=player.vY*dt;if(player.jumpY<0){player.jumpY=0;player.vY=0;}}
+if(player.vY||player.jumpY){player.vY-=15.7*dt;player.jumpY+=player.vY*dt;if(player.jumpY<0){player.jumpY=0;player.vY=0;sound('land');}}
 player.y=bridgeY(player.z);
-for(let i=0;i<spirits.length;i++){let sp=spirits[i];if(sp.got)continue;let dis=Math.hypot(sp.x-player.x,sp.z-player.z);if(dis<1.32){sp.got=true;collected++;sparkle('Cahaya roh '+collected+' dari 7 ditemukan');sound(510+i*60);countUI();if(collected===7)setTimeout(()=>sparkle('Gerbang kuil telah terbuka'),1600);}}
+for(let i=0;i<spirits.length;i++){let sp=spirits[i];if(sp.got)continue;let dis=Math.hypot(sp.x-player.x,sp.z-player.z);if(dis<1.32){sp.got=true;collected++;sparkle('Cahaya roh '+collected+' dari 7 ditemukan');sound('collect');countUI();if(collected===7)setTimeout(()=>sparkle('Gerbang kuil telah terbuka'),1600);}}
 if(collected===7&&player.z< -80&&Math.abs(player.x-pathX(-92))<7){winGame();}
 }
 function camera(dt,t){let ex,ey,ez,tx,ty,tz;
@@ -351,7 +359,7 @@ function settings(){phaseBeforeSettings=phase;$('settingsScreen').classList.remo
 let phaseBeforeSettings='menu';
 $('settingsBtn').onclick=settings;$('settingsBack').onclick=()=>$('settingsScreen').classList.add('hidden');
 $('qualitySelect').onchange=e=>setQuality(e.target.value);
-$('audioSelect').onchange=e=>{audioOn=e.target.value==='on';};
+$('audioSelect').onchange=e=>{audioOn=e.target.value==='on';window.ILAudio?.setEnabled(audioOn);if(audioOn){window.ILAudio?.unlock();sound('start',{force:true})}};
 $('startBtn').onclick=startGame;$('pauseBtn').onclick=openPause;$('resumeBtn').onclick=resume;
 $('restartBtn').onclick=startGame;$('qualityPauseBtn').onclick=()=>{settings();};
 $('playAgainBtn').onclick=startGame;$('menuBtn').onclick=goMenu;

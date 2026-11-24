@@ -2,8 +2,8 @@
 const IL=(()=>{'use strict';
 const TAU=Math.PI*2, touch=('ontouchstart'in window)||navigator.maxTouchPoints>0||matchMedia('(pointer:coarse)').matches;
 const hues=['#53d5c1','#f1bf70','#a9a0ff','#6bb7ff','#f281ae','#a5db86'];
-const dot=(x,y,r,c)=>{ctx.fillStyle=c;ctx.beginPath();ctx.arc(x,y,Math.max(0,r),0,TAU);ctx.fill()};
-const rounded=(x,y,w,h,c,r=9)=>{ctx.fillStyle=c;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill()};
+const dot=(x,y,r,c)=>{let fill=c;if(r>=11&&r<=85&&typeof c==='string'&&/^#[0-9a-f]{6}$/i.test(c)){let g=ctx.createRadialGradient(x-r*.35,y-r*.42,0,x,y,r);g.addColorStop(0,'#faffff');g.addColorStop(.30,c);g.addColorStop(1,c+'b8');fill=g}ctx.fillStyle=fill;ctx.beginPath();ctx.arc(x,y,Math.max(0,r),0,TAU);ctx.fill()};
+const rounded=(x,y,w,h,c,r=9)=>{ctx.fillStyle=window.ILExperience?.material(c,x,y,w,h)||c;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();if(w>24&&h>19&&w*h<50000&&typeof c==='string'&&/^#[0-9a-f]{6}$/i.test(c)){ctx.save();ctx.clip();ctx.strokeStyle='#ffffff29';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x+Math.min(r,w/3),y+1.5);ctx.lineTo(x+w-Math.min(r,w/3),y+1.5);ctx.stroke();ctx.restore()}};
 const line=(x,y,X,Y,c='#ffffff',lw=3)=>{ctx.strokeStyle=c;ctx.lineWidth=lw;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(X,Y);ctx.stroke()};
 const label=(str,x,y,size=20,c='#f4faff',align='center')=>{ctx.textAlign=align;ctx.font=`700 ${size}px system-ui`;ctx.fillStyle=c;ctx.fillText(String(str),x,y)};
 const poly=(pts,c)=>{ctx.beginPath();ctx.moveTo(pts[0][0],pts[0][1]);pts.slice(1).forEach(p=>ctx.lineTo(p[0],p[1]));ctx.closePath();ctx.fillStyle=c;ctx.fill()};
@@ -28,9 +28,9 @@ function register(d){const meta=[d.id,d.name,d.category||'Arcade',d.icon||'✦',
   get alt(){return !!(held('shift')||v.alt)},score(n=1){addScore(n)},click(){ILAudio?.play('tap')},fire(){ILAudio?.play('fire')},jump(){ILAudio?.play('jump')}};
  const makeControls=()=>controls(s,d.controls||[]);
  handlers[d.id]={canvas:true,init(){s={t:0,fx:[],timeLimit:d.duration||0,...(d.init?.(api)||{})};v={};s.virtual=v;canvas.addEventListener('pointerup',()=>{v={};s.virtual=v;heldFinger=false});canvas.addEventListener('pointercancel',()=>{v={};s.virtual=v;heldFinger=false});canvas.addEventListener('lostpointercapture',()=>{v={};s.virtual=v;heldFinger=false});if(d.ready)d.ready(s,api);},
-  update(dt){s.t+=dt;for(let p of s.fx){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=120*dt;p.life-=dt*1.6}s.fx=s.fx.filter(p=>p.life>0);if(d.update)d.update(s,dt,api);if(!finished&&d.duration&&s.t>=d.duration){if(d.timeout)d.timeout(s,api);else lose('Waktu berakhir')}},
-  draw(){background(d.color,s.t);ctx.save();if(d.draw)d.draw(s,api);ctx.restore();for(let p of s.fx){ctx.globalAlpha=p.life;dot(p.x,p.y,4*p.life,p.c)}ctx.globalAlpha=1;makeControls();hud(s)},
-  pointer(x,y,type){if(type==='pointerdown'){heldFinger=true;let btn=null;if(touch)for(let k of d.controls||[]){const p=ctrlpos[k];if(p&&dist(x,y,p[0],p[1])<41){btn=k;break}}if(btn){v[btn]=true;api.click();d.button?.(s,btn,api);return}}if(type==='pointermove'&&heldFinger){if(touch&&Object.values(v).some(Boolean))return;}if(d.pointer)d.pointer(s,x,y,type,api)},
-  key(k){if(d.key)d.key(s,k,api)}};return d}
-function finishDisplay(){if(!catalog||!window.renderCards)return;renderFilters();renderCards();$('totalStat').textContent=catalog.length;}
+  update(dt){s.t+=dt;for(let p of s.fx){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=120*dt;p.life-=dt*1.6}s.fx=s.fx.filter(p=>p.life>0);const before=window.ILExperience?.state(s);if(d.update)d.update(s,dt,api);window.ILExperience?.observe(d.id,before,s,dt);window.ILExperience?.effects(dt);if(!finished&&d.duration&&s.t>=d.duration){if(d.timeout)d.timeout(s,api);else lose('Waktu berakhir')}},
+  draw(){if(window.ILExperience)ILExperience.scene(d,s.t);else background(d.color,s.t);ctx.save();if(d.draw)d.draw(s,api);ctx.restore();for(let p of s.fx){ctx.globalAlpha=p.life;dot(p.x,p.y,4*p.life,p.c)}ctx.globalAlpha=1;window.ILExperience?.drawFX();makeControls();hud(s)},
+  pointer(x,y,type){if(type==='pointerdown'){heldFinger=true;let btn=null;if(touch)for(let k of d.controls||[]){const p=ctrlpos[k];if(p&&dist(x,y,p[0],p[1])<41){btn=k;break}}if(btn){v[btn]=true;window.ILExperience?.interact(d.id,x,y,btn==='action'?ILExperience.action(d.id):'move');d.button?.(s,btn,api);return}}if(type==='pointermove'&&heldFinger){if(touch&&Object.values(v).some(Boolean))return;}const b=window.ILExperience?.state(s);if(d.pointer)d.pointer(s,x,y,type,api);if(type==='pointerdown'&&!finished&&!['melodyecho','beatlane'].includes(d.id))window.ILExperience?.interact(d.id,x,y,'tap');window.ILExperience?.observe(d.id,b,s)},
+  key(k){const b=window.ILExperience?.state(s);if(d.key)d.key(s,k,api);window.ILExperience?.observe(d.id,b,s)}};return d}
+function finishDisplay(){if(!catalog||!window.renderCards)return;for(const c of new Set(catalog.map(g=>g[2])))if(!allcats.includes(c))allcats.push(c);renderFilters();renderCards();$('totalStat').textContent=catalog.length;}
 return{register,finishDisplay,TAU,touch,rr,rint,dist,within,colors:hues};})();
