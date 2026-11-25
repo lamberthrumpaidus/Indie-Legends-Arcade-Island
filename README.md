@@ -1,31 +1,55 @@
+<!-- ALL Create by LamberthRumpaidus -->
 <div align="center">
-
-<img src="icon-512.png" alt="Logo Indie Legends Arcade Island" width="190">
-
-# Indie Legends Arcade Island
-
-**Satu pulau, banyak petualangan.**
-
-**[Mainkan seluruh koleksi game di website resmi](https://indielegendsarcadeisland.netlify.app/)**
-
+  <img src="./icon-512.png" alt="Identitas visual Indie Legends Arcade Island" width="150" />
+  <h1>Indie Legends Arcade Island</h1>
+  <p>Portal permainan arcade gratis berbasis browser.</p>
+  <p><a href="https://indielegendsarcadeisland.netlify.app/">Mainkan koleksi</a> · <a href="https://github.com/lamberthrumpaidus/lamberthrumpaidus">Profil pengembang</a></p>
 </div>
 
-## Website Resmi
+---
 
-Kunjungi **[indielegendsarcadeisland.netlify.app](https://indielegendsarcadeisland.netlify.app/)** untuk menjelajahi dan memainkan koleksi game secara gratis melalui browser.
+## Gambaran umum
 
-**Indie Legends Arcade Island** adalah koleksi permainan arcade gratis yang dapat dinikmati langsung melalui browser. Menghadirkan 104 permainan dengan beragam pengalaman, mulai dari aksi, balapan, teka-teki, permainan klasik, hingga petualangan di dunia fantasi.
+Indie Legends Arcade Island (ILAI) menggabungkan 104 permainan dalam satu portal dengan variasi aksi, balapan, teka-teki, permainan klasik, dan petualangan. Katalog dirancang untuk perangkat seluler maupun komputer, dengan dukungan offline untuk konten yang tersedia secara lokal.
 
-Di antara permainan yang tersedia, **SHINRIN — Spirit Forest** mengajak pemain menjelajahi hutan bernuansa Jepang, melewati gerbang dan jembatan, serta mengumpulkan roh dalam sebuah petualangan tiga dimensi. Permainan lainnya menawarkan tantangan singkat dan menyenangkan, seperti **Snake**, **Space Defender**, **2048**, dan berbagai permainan arcade lainnya.
+## Permainan unggulan
 
-Koleksi unggulan mencakup **RUBAKA**, platformer aksi dengan eksplorasi dan pertarungan; **LANDLORD**, petualangan fantasi 3D di tujuh dunia; dan **LAST ASYLUM**, permainan survival 3D dengan perburuan, memasak, perdagangan, dan pengelolaan markas. Ketiganya dapat dibuka langsung dari katalog.
+| Permainan | Pengalaman |
+|---|---|
+| SHINRIN — Spirit Forest | Eksplorasi hutan bernuansa Jepang |
+| Spirit Arena | Pengalaman dengan rendering WebGL dan mode kompatibilitas |
+| [RUBAKA](https://github.com/lamberthrumpaidus/Rubaka) | Aksi-platformer |
+| [LANDLORD](https://github.com/lamberthrumpaidus/LANDLORD) | Petualangan fantasi 3D |
+| [LAST ASYLUM](https://github.com/lamberthrumpaidus/Last-Asylum) | Survival dan pengelolaan sumber daya |
 
-Dirancang untuk dimainkan melalui **ponsel maupun laptop**, Indie Legends Arcade Island menghadirkan portal permainan dengan tema pulau terapung, katalog interaktif, dukungan offline, serta pengalaman audio dan visual yang beragam. Spirit Arena juga tersedia dalam koleksi dengan sistem rendering WebGL dan mode kompatibilitas.
+Integrasi permainan unggulan dicatat dalam `featured-games.lock.json` agar versi sumber yang digunakan dapat ditelusuri.
+
+## Teknologi dan struktur
+
+HTML, CSS, JavaScript, WebGL, service worker, serta Three.js sebagai dependensi build opsional.
+
+| Lokasi | Fungsi |
+|---|---|
+| `games/` | Koleksi permainan |
+| `src/` | Kode portal |
+| `optional/` | Modul rendering opsional |
+| `tools/` | Build dan pengujian |
+| [docs/](./docs/README.md) | Dokumentasi teknis |
+
+## Pengembangan lokal
+
+```bash
+git clone https://github.com/lamberthrumpaidus/Indie-Legends-Arcade-Island.git
+cd Indie-Legends-Arcade-Island
+npm install
+npm test
+npm run build
+```
+
+Gunakan `npm run build:three` apabila memerlukan bundel Three.js opsional. Detail arsitektur tersedia di [dokumentasi proyek](./docs/PREMIUM_ARCHITECTURE.md).
 
 ---
 
 <div align="center">
-
-Dibuat oleh **[LamberthRumpaidus](https://github.com/lamberthrumpaidus)**
-
+  <sub>Dikembangkan oleh <a href="https://github.com/lamberthrumpaidus/lamberthrumpaidus">Lamberth Rumpaidus</a></sub>
 </div>
